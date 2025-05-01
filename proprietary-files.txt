@@ -631,6 +631,12 @@ vendor/lib64/libstnfc-auth.so
 vendor/lib64/libstnfc-streset.so
 vendor/lib64/nfc_nci.st21nfc.st.so
 
+# Properties (SKU)
+product/etc/motorola/props/hardware.sku.XT2601-1.prop:product/etc/hardware.sku.XT2601-1.prop
+product/etc/motorola/props/hardware.sku.XT2601-2.prop:product/etc/hardware.sku.XT2601-2.prop
+product/etc/motorola/props/hardware.sku.XT2601-3.prop:product/etc/hardware.sku.XT2601-3.prop
+product/etc/motorola/props/hardware.sku.XT2601-4.prop:product/etc/hardware.sku.XT2601-4.prop
+
 # Secure element
 vendor/bin/hw/android.hardware.secure_element-service.qti
 vendor/etc/init/android.hardware.secure_element-service.qti.rc
