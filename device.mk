@@ -11,6 +11,12 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 TARGET_SCREEN_HEIGHT := 2712
 TARGET_SCREEN_WIDTH := 1220
 
+# Init
+PRODUCT_PACKAGES += \
+    init.mmi.overlay.rc \
+    init.vendor.st21nfc.rc \
+    init.oem.fingerprint2.sh
+
 # Shipping API Level
 BOARD_SHIPPING_API_LEVEL := 202404
 PRODUCT_SHIPPING_API_LEVEL := 36
@@ -18,6 +24,15 @@ PRODUCT_SHIPPING_API_LEVEL := 36
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
+
+# VINTF
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/vintf/manifest.xml
+ODM_MANIFEST_SKUS += dn dnes n nes nv
+ODM_MANIFEST_DN_FILES := $(LOCAL_PATH)/configs/vintf/sku/manifest_dn.xml
+ODM_MANIFEST_DNES_FILES := $(LOCAL_PATH)/configs/vintf/sku/manifest_dnes.xml
+ODM_MANIFEST_N_FILES := $(LOCAL_PATH)/configs/vintf/sku/manifest_n.xml
+ODM_MANIFEST_NES_FILES := $(LOCAL_PATH)/configs/vintf/sku/manifest_nes.xml
+ODM_MANIFEST_NV_FILES := $(LOCAL_PATH)/configs/vintf/sku/manifest_nv.xml
 
 # Inherit from motorola sm8750-common
 $(call inherit-product, device/motorola/sm8750-common/common.mk)

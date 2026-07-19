@@ -17,6 +17,9 @@ from extract_utils.main import (
 namespace_imports = [
     'device/motorola/sm8750-common',
     'vendor/motorola/sm8750-common',
+    'hardware/motorola',
+    'hardware/qcom-caf/sm8750',
+    'vendor/qcom/opensource/commonsys-intf/display',
 ]
 
 blob_fixups: blob_fixups_user_type = {
@@ -31,5 +34,5 @@ module = ExtractUtilsModule(
 )
 
 if __name__ == '__main__':
-    utils = ExtractUtils.device(module)
+    utils = ExtractUtils.device_with_common(module, 'sm8750-common', module.vendor)
     utils.run()

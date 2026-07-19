@@ -19,4 +19,12 @@ PRODUCT_MANUFACTURER := motorola
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := motorola edge 70
 
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    BuildDesc="roadstr_g-user 16 W1WRS36.39-115-4 edd95a-8ad0d release-keys" \
+    BuildFingerprint=motorola/roadstr_g/roadstr:16/W1WRS36.39-115-4/edd95a-8ad0d:user/release-keys \
+    DeviceName=roadstr \
+    DeviceProduct=roadstr_g \
+    SystemDevice=roadstr \
+    SystemName=roadstr_g
+
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
