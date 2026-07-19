@@ -1,0 +1,12 @@
+<manifest version="8.0" type="device" target-level="202404">
+    <hal format="aidl">
+        <name>android.hardware.biometrics.fingerprint</name>
+        <version>3</version>
+        <fqname>IFingerprint/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>com.motorola.hardware.biometric.fingerprint</name>
+        <version>2</version>
+        <fqname>IMotoFingerPrint/default</fqname>
+    </hal>
+</manifest>

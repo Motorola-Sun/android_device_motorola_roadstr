@@ -1,0 +1,39 @@
+# Audio
+ro.vendor.beluga.c=0x4800
+ro.vendor.beluga.p=0x3
+ro.vendor.beluga.s=0x900
+ro.vendor.beluga.t=0x240
+vendor.audio.max.dr=8.1,6.9
+vendor.audio.max.temp=60.0
+vendor.audio.min.dr=5.9,5.1
+vendor.audio.min.temp=20.0
+vendor.audio.safe.resistance=7.0,6.0
+ro.vendor.mot.awinic.tiktap=1
+
+# Camera
+persist.vendor.camera.physical.num=3
+ro.camera.disableHeicUltraHDR=true
+ro.camera.enableCamera1MaxZsl=true
+
+# Display
+ro.vendor.display.foss=1
+vendor.display.foss.config=1
+vendor.display.foss.config_path=/vendor/etc/display/FOSSConfig.xml
+ro.vendor.display.notify_sf_rr_mode=1
+ro.vendor.display.paneltype=2
+ro.vendor.display.sensortype=2
+vendor.display.hbm_brightness_level_dvb=12150
+
+# Fingerprint
+ro.vendor.hw.fps=true
+persist.vendor.qfp=true
+persist.vendor.fingerprint.udfps.handler=jiiov
+persist.vendor.fingerprint.type=udfps_optical
+persist.vendor.fingerprint.sensor_location=610|2440|102
+
+# Sensors
+persist.vendor.sensors.mot_tap=true
+ro.vendor.sensors.back_light_compensate=false
+ro.vendor.sensors.front_light_compensate=true
+ro.vendor.sensors.glance_approach=false
+ro.vendor.sensors.sns_offbody=true
