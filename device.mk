@@ -11,6 +11,9 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 TARGET_SCREEN_HEIGHT := 2712
 TARGET_SCREEN_WIDTH := 1220
 
+# Fingerprint
+TARGET_HAS_UDFPS := true
+
 # Init
 PRODUCT_PACKAGES += \
     init.mmi.overlay.rc \
