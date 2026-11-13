@@ -3,9 +3,6 @@
 
 import /vendor/etc/init/hw/init.vendor.st21nfc.rc
 
-on early-init
-    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -r -d /vendor/lib/modules zram
-
 on fs
     insmod /vendor/lib/modules/mmi_annotate.ko
     insmod /vendor/lib/modules/mmi_info.ko
@@ -19,9 +16,6 @@ on fs
     insmod /vendor/lib/modules/focaltech_v3_4.ko
     insmod /vendor/lib/modules/wlan_elna.ko
     insmod /vendor/lib/modules/aw_haptic_hv_v1_5.ko
-
-    #zram wb
-    mount_all /vendor/etc/fstab.qcom.zram --early
 
 on post-fs && property:ro.boot.secure_hardware=0
     setprop vendor.wv.oemcrypto.debug.enable_prov40 false
