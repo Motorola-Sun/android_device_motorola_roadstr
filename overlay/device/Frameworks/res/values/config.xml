@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Indicate available ColorDisplayManager.COLOR_MODE_xxx. -->
+    <integer-array name="config_availableColorModes">
+        <item>0</item>
+        <item>1</item>
+        <item>256</item>
+    </integer-array>
+
+    <!-- Mapping for default ColorDisplayManager.COLOR_MODE_xxx to other color modes, if
+         if applicable. By default, all map to the same value. -->
+    <integer-array name="config_mappedColorModes">
+        <item>0</item> <!-- COLOR_MODE_NATURAL -->
+        <item>1</item> <!-- COLOR_MODE_BOOSTED -->
+        <item>256</item> <!-- COLOR_MODE_SATURATED -->
+        <item>3</item> <!-- COLOR_MODE_AUTOMATIC -->
+    </integer-array>
+
+    <!-- Indicate whether to allow the device to suspend when the screen is off
+         due to the proximity sensor. -->
+    <bool name="config_suspendWhenScreenOffDueToProximity">true</bool>
+
+    <!-- Minimum screen brightness setting allowed by power manager. -->
+    <item format="float" name="config_screenBrightnessSettingMinimumFloat" type="dimen">0.02472188</item>
+
+    <!-- Maximum screen brightness allowed by the power manager. -->
+    <item format="float" name="config_screenBrightnessSettingMaximumFloat" type="dimen">1.0</item>
+
+    <!-- Default screen brightness setting set. -->
+    <item format="float" name="config_screenBrightnessSettingDefaultFloat" type="dimen">0.38188976</item>
+
+    <!-- Screen brightness used to dim the screen when the user activity
+         timeout expires. -->
+    <item format="float" name="config_screenBrightnessDimFloat" type="dimen">0.02472188</item>
+
+    <!-- Screen brightness used to dim the screen while dozing in a very low power state. -->
+    <integer name="config_screenBrightnessDoze">17</integer>
+
+    <!-- Stability requirements in milliseconds for accepting a new brightness level. -->
+    <integer name="config_autoBrightnessBrighteningLightDebounce">500</integer>
+    <integer name="config_autoBrightnessDarkeningLightDebounce">500</integer>
+
+    <!-- Array of light sensor lux values to define our levels for auto backlight brightness support. -->
+    <integer-array name="config_autoBrightnessLevels">
+        <item>2</item>
+        <item>4</item>
+        <item>10</item>
+        <item>20</item>
+        <item>40</item>
+        <item>100</item>
+        <item>325</item>
+        <item>1250</item>
+        <item>3500</item>
+        <item>5000</item>
+        <item>10000</item>
+        <item>30000</item>
+        <item>80000</item>
+        <item>100000</item>
+        <item>200000</item>
+    </integer-array>
+
+    <!-- Array of desired screen brightness in nits corresponding to the lux values
+         in the config_autoBrightnessLevels array. -->
+    <integer-array name="config_autoBrightnessDisplayValuesNits">
+        <item>3</item>
+        <item>10</item>
+        <item>16</item>
+        <item>32</item>
+        <item>64</item>
+        <item>82</item>
+        <item>90</item>
+        <item>105</item>
+        <item>192</item>
+        <item>412</item>
+        <item>500</item>
+        <item>700</item>
+        <item>800</item>
+        <item>1000</item>
+        <item>1500</item>
+        <item>1850</item>
+    </integer-array>
+
+    <!-- An array describing the screen's backlight values corresponding to the brightness
+         values in the config_screenBrightnessNits array. -->
+    <integer-array name="config_screenBrightnessBacklight">
+        <item>7</item>
+        <item>27</item>
+        <item>35</item>
+        <item>49</item>
+        <item>70</item>
+        <item>80</item>
+        <item>83</item>
+        <item>90</item>
+        <item>116</item>
+        <item>164</item>
+        <item>179</item>
+        <item>207</item>
+        <item>222</item>
+        <item>229</item>
+        <item>252</item>
+        <item>255</item>
+    </integer-array>
+
+    <!-- An array of floats describing the screen brightness in nits corresponding to the backlight
+         values in the config_screenBrightnessBacklight array. -->
+    <array name="config_screenBrightnessNits">
+        <item>3</item>
+        <item>10</item>
+        <item>16</item>
+        <item>32</item>
+        <item>64</item>
+        <item>82</item>
+        <item>90</item>
+        <item>105</item>
+        <item>192</item>
+        <item>412</item>
+        <item>500</item>
+        <item>700</item>
+        <item>800</item>
+        <item>1000</item>
+        <item>1500</item>
+        <item>1850</item>
+    </array>
+
+    <!-- MMS user agent string -->
+    <string name="config_mms_user_agent" translatable="false">motorolaedge70</string>
+
+    <!-- MMS user agent prolfile url -->
+    <string name="config_mms_user_agent_profile_url" translatable="false">http://uaprof.motorola.com/phoneconfig/motov1/Profile/motov1.rdf</string>
+
+    <!-- Type of the double tap sensor. Empty if double tap is not supported. -->
+    <string name="config_dozeDoubleTapSensorType" translatable="false">org.lineageos.sensor.double_tap</string>
+
+    <!-- Type of the udfps long press sensor. Empty if long press is not supported. -->
+    <string name="config_dozeUdfpsLongPressSensorType" translatable="false">org.lineageos.sensor.udfps</string>
+
+    <!-- Whether the device supports screen off UDFPS -->
+    <bool name="config_screen_off_udfps_enabled">true</bool>
+
+    <!-- Default value for fp screen off unlock toggle -->
+    <bool name="config_screen_off_udfps_default_on">true</bool>
+
+    <!-- Control whether the always on display mode is available. -->
+    <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
+
+    <!-- Control whether the always on display mode is enabled by default. -->
+    <bool name="config_dozeAlwaysOnEnabled">false</bool>
+
+    <!-- The bounding path of the cutout region of the main built-in display. -->
+    <string name="config_mainBuiltInDisplayCutout" translatable="false">M -56,0 L 56,0 L 56,125 L -56,125 Z</string>
+
+    <!-- The default refresh rate for a given device. -->
+    <integer name="config_defaultRefreshRate">0</integer>
+
+    <!-- The default peak refresh rate for a given device. -->
+    <integer name="config_defaultPeakRefreshRate">120</integer>
+
+    <!-- Low display brightness / low ambient light zone: refresh rate is locked to
+         config_defaultRefreshRateInZone there. -->
+    <integer-array name="config_brightnessThresholdsOfPeakRefreshRate">
+        <item>56</item>
+        <item>67</item>
+    </integer-array>
+
+    <integer-array name="config_ambientThresholdsOfPeakRefreshRate">
+        <item>-1</item>
+        <item>70</item>
+    </integer-array>
+
+    <!-- The properties of a UDFPS sensor in pixels, in the order listed below: -->
+    <integer-array name="config_udfps_sensor_props" translatable="false">
+        <item>610</item>
+        <item>2440</item>
+        <item>102</item>
+    </integer-array>
+
+    <!-- Whether to ignore the UDFPS refresh rate vote. -->
+    <bool name="config_ignoreUdfpsVote">true</bool>
+
+    <!-- Vibrator pattern for feedback about a long screen/key press -->
+    <integer-array name="config_longPressVibePattern">
+        <item>0</item>
+        <item>30</item>
+    </integer-array>
+
+    <!-- Vibrator pattern for feedback about touching a virtual key -->
+    <integer-array name="config_virtualKeyVibePattern">
+        <item>0</item>
+        <item>20</item>
+    </integer-array>
+
+    <!-- Vibrator pattern for feedback when selecting an hour/minute tick of a Clock -->
+    <integer-array name="config_clockTickVibePattern">
+        <item>0</item>
+        <item>10</item>
+    </integer-array>
+</resources>
