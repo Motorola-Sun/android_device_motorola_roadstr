@@ -30,6 +30,13 @@ namespace_imports = [
 
 blob_fixups: blob_fixups_user_type = {
     (
+         'vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-goodixservice',
+         'vendor/bin/hw/android.hardware.biometrics.fingerprint-service-jv',
+         'vendor/lib64/libgf_hal.so',
+    ): blob_fixup()
+        .replace_needed('android.hardware.biometrics.common-V3-ndk.so', 'android.hardware.biometrics.common-V4-ndk.so')
+        .replace_needed('android.hardware.biometrics.fingerprint-V3-ndk.so', 'android.hardware.biometrics.fingerprint-V4-ndk.so')
+    (
         'vendor/lib64/camera/components/com.qti.node.dewarp.so',
         'vendor/lib64/hw/com.qti.chi.override.so',
         'vendor/lib64/libcamximageformatutils.so',
