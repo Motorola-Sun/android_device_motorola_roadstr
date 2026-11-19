@@ -20,6 +20,12 @@ PRODUCT_PACKAGES += \
     init.vendor.st21nfc.rc \
     init.oem.fingerprint2.sh
 
+# Overlay
+PRODUCT_PACKAGES += \
+    FrameworksResDevice \
+    LineageSystemUIResDevice \
+    SystemUIResDevice
+
 # Shipping API Level
 BOARD_SHIPPING_API_LEVEL := 202404
 PRODUCT_SHIPPING_API_LEVEL := 36
