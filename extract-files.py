@@ -51,6 +51,8 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/libcamxods.so',
     ): blob_fixup()
         .replace_needed('libtinyxml2.so', 'libtinyxml2-v36.so'),
+    'vendor/lib64/hw/anc.hal.so': blob_fixup()
+        .add_needed('libion.so'),
 }
 
 extract_fns: extract_fns_user_type = {
