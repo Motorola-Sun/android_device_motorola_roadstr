@@ -30,6 +30,9 @@ PRODUCT_PACKAGES += \
     SettingsResDevice \
     SystemUIResDevice
 
+# Sensors
+$(call soong_config_set_bool,moto_sensors,single_tap,true)
+
 # Shipping API Level
 BOARD_SHIPPING_API_LEVEL := 202404
 PRODUCT_SHIPPING_API_LEVEL := 36
