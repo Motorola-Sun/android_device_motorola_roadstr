@@ -610,6 +610,10 @@ vendor/usr/keylayout/fts_ts.kl
 vendor/usr/keylayout/goodix_ts.kl
 
 # NFC
+vendor/etc/libnfc-hal-st-felica.conf
+vendor/etc/libnfc-hal-st.conf
+vendor/etc/libnfc-nci-st-felica.conf
+vendor/etc/libnfc-nci-st.conf
 vendor/etc/st21nfc_conf_ds.txt
 vendor/etc/st21nfc_conf_ss.txt
 vendor/etc/st54l_conf_ds.txt
